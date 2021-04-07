@@ -1,5 +1,5 @@
-#ifndef DEFINITIONS_H_INCLUDED
-#define DEFINITIONS_H_INCLUDED
+#ifndef SLL_H_INCLUDED
+#define SLL_H_INCLUDED
 
 #define MAX_CONTENT 40
 #define BUFFER 256
@@ -11,7 +11,7 @@ struct SLL_Data{
     char content[MAX_CONTENT];
 };
 
-typedef struct SLL_Data SLLData;    //
+typedef struct SLL_Data SLLData;
 
 struct SLL_Pointer{
     SLLData data;

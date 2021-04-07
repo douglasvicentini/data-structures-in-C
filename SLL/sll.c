@@ -11,8 +11,8 @@ SLLPointer* initializeList(void)
 SLLPointer* insertNodeInOrder(SLLPointer *listPt, SLLData data)
 {
     SLLPointer* new_node;
-    SLLPointer* prev = NULL; // stores previous node when traversing
-    SLLPointer* auxPt = listPt; // auxiliary pointer for list traversing
+    SLLPointer* prev = NULL; /* stores previous node when traversing */
+    SLLPointer* auxPt = listPt; /* auxiliary pointer for list traversing */
 
     new_node = (SLLPointer*) malloc(sizeof(SLLPointer));
     new_node->data = data;
@@ -28,18 +28,18 @@ SLLPointer* insertNodeInOrder(SLLPointer *listPt, SLLData data)
     new_node->next = auxPt;
 
     /* Chains node accordingly: */
-    if (prev == NULL) // node was inserted in the first position
+    if (prev == NULL) /* node was inserted in the first position */
         listPt = new_node;
     else
-        prev->next = new_node; // node was inserted either in the middle or at the end
+        prev->next = new_node; /* node was inserted either in the middle or at the end */
 
-    return listPt; // returns updated list
+    return listPt; /*  returns updated list */
 }
 
 SLLPointer *removeNodeByID(SLLPointer *listPt, int id)
 {
-    SLLPointer *auxPt = listPt; // auxiliary pointer for list traversing
-    SLLPointer* prev = NULL; // auxiliary pointer for previous pointer to auxPt
+    SLLPointer *auxPt = listPt; /* auxiliary pointer for list traversing */
+    SLLPointer* prev = NULL; /* auxiliary pointer for previous pointer to auxPt */
 
     while (auxPt && auxPt->data.id != id){
         prev = auxPt;
@@ -67,12 +67,12 @@ void getData(SLLData *data)
 
     printf("\n\tID: ");
     fgets(input, BUFFER, stdin);
-    sscanf(input, "%d", &data->id); // transfers data to 'id' attribute
+    sscanf(input, "%d", &data->id); /* transfers data to 'id' attribute */
     fflush(stdin);
 
     printf("\tContent: ");
     fgets(input, BUFFER, stdin);
-    strcpy(data->content, input); // transfers data to 'content' attribute
+    strcpy(data->content, input); /* transfers data to 'content' attribute */
     fflush(stdin);
 
     return;
@@ -80,7 +80,7 @@ void getData(SLLData *data)
 
 void printList(SLLPointer *listPt)
 {
-    SLLPointer *auxPt; // auxiliary pointer for list traversing
+    SLLPointer *auxPt; /* auxiliary pointer for list traversing */
 
     /* If the list is empty: */
     if (listPt == NULL){
@@ -101,7 +101,7 @@ void printList(SLLPointer *listPt)
 
 SLLPointer *destroyList(SLLPointer *listPt)
 {
-    SLLPointer *auxPt; // auxiliary pointer for list traversing
+    SLLPointer *auxPt; /* auxiliary pointer for list traversing */
 
     /* Traverses the list and frees allocated memory: */
     while (listPt != NULL)
