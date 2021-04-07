@@ -1,7 +1,7 @@
 ## Simply Linked List (SLL)
 
-This is a Data Structure in which each node points to the next on the SLL's logical order. 
+A SLL consists of a linked list in which each node points to its next, based on the SLL's natural logical order.
 
-In this implementation, each node will contain a specific ID integer number. The list will be sorted in ascending order.
+In this implementation, each node will contain a specific ID integer number and the SLL will be sorted in ascending order.
 
-For instance, a node with id = 1 will point to a node with id >= 2, if this node exists.
+For instance, a node with id=1 can only point to a node with id>=2, if this node exists.
