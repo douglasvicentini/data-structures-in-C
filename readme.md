@@ -1,6 +1,6 @@
 ## About the repository
 
-This project aims to present the implementation of some of the most common Data Structures, as well as some generic and simple algorithms for each one, such as insertion, 
+This project aims to present the implementation of some of the most common Data Structures, as well as some generic and simple algorithms for each one.
 
 ## Files
 
