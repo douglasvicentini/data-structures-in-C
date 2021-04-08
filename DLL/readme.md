@@ -14,10 +14,10 @@ As an example:
 		- n3: 'id' = 3.
 
 		i.   n1->previous will point to NULL, as it's the first node;
-			 n1->next will point to n2.
+		 n1->next will point to n2.
 
 		ii.  n2->previous will point to n1;
-			 n2->next will point to n3.
+		 n2->next will point to n3.
 
 		iii. n3->previous will point to n2;
-			 n3->next will point to NULL, as it's the last node.
+		 n3->next will point to NULL, as it's the last node.
