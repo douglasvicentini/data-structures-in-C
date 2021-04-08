@@ -13,11 +13,11 @@ Let dll be a Doubly Linked List with 3 nodes:
 * __n2__: 'id' = 2;
 * __n3__: 'id' = 3.
 
-	i.   n1->previous will point to NULL, as it's the first node;
-		 n1->next will point to n2.
+> 	n1->previous will point to NULL, as it's the first node;
+	n1->next will point to n2.
 
-	ii.  n2->previous will point to n1;
-	 	n2->next will point to n3.
+>	n2->previous will point to n1;
+	n2->next will point to n3.
 
-	iii. n3->previous will point to n2;
-		 n3->next will point to NULL, as it's the last node.
+>	n3->previous will point to n2;
+	n3->next will point to NULL, as it's the last node.
