@@ -8,7 +8,7 @@ Here, we'll be sorting the DLL in ascending order based on an '__id__' integer n
 
 As an example:
 
-	> Let dll be a Doubly Linked List with 3 nodes:
+	Let dll be a Doubly Linked List with 3 nodes:
 		- __n1__: 'id' = 1;
 		- __n2__: 'id' = 2;
 		- __n3__: 'id' = 3.
