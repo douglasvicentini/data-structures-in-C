@@ -29,7 +29,7 @@ DLLPointer *insertNodeInOrder(DLLPointer *listPt, DLLData data)
     while ((auxPt->next != NULL) && (auxPt->next->info.id < data.id))
         auxPt = auxPt->next;
 
-    /* Encadeamento do new_node elemento (insere new_node após auxPt): */
+    /* Chaining of new_node: */
     new_node->previous = auxPt;
     new_node->next = auxPt->next;
     auxPt->next = new_node;
@@ -93,11 +93,11 @@ void printListReverse(DLLPointer* listPt)
     else{
         printf("\n\t\t ----- DADOS DA LISTA EM ORDEM REVERSA ----- \n");
 
-        /* Percorre a listPt até o último elemento; */
+        /* Traverses all DLL: */
         while (auxPt->next)
             auxPt = auxPt->next;
 
-        /* Percorre a listPt até o primeiro elemento, para imprimí-los; */
+        /* Traverses all DLL backwards and prints each node data: */
         while (auxPt)
         {
             printf("\n\t\t| ID: %d", auxPt->info.id);
@@ -111,7 +111,7 @@ void printListReverse(DLLPointer* listPt)
 
 void getData(DLLData *data)
 {
-    char input[BUFFER]; /* Variável para receber input e transferir os data para os devidos atributos. */
+    char input[BUFFER];
 
     printf("\n --> Enter node data:\n");
 
