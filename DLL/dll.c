@@ -74,7 +74,7 @@ void printList(DLLPointer *listPt)
     if (auxPt == NULL)
         printf("\n\t The list is empty.\n");
     else{
-        printf("\n\t\t ----- ORDERED LIST DATA ----- \n");
+        printf("\n\t\t ----- LIST DATA ----- \n");
         while (auxPt){
             printf("\n\t\t| ID: %d", auxPt->info.id);
             printf("\n\t\t| CONTENT: %s", auxPt->info.content);
@@ -89,9 +89,9 @@ void printListReverse(DLLPointer* listPt)
     DLLPointer *auxPt = listPt;
 
     if (auxPt == NULL)
-        printf("\n\tLista esta vazia.\n");
+        printf("\n\t The list is empty.\n");
     else{
-        printf("\n\t\t ----- DADOS DA LISTA EM ORDEM REVERSA ----- \n");
+        printf("\n\t\t ----- LIST DATA IN REVERSE ORDER ----- \n");
 
         /* Traverses all DLL: */
         while (auxPt->next)
@@ -105,8 +105,6 @@ void printListReverse(DLLPointer* listPt)
             auxPt = auxPt->previous;
         }
     }
-
-    return;
 }
 
 void getData(DLLData *data)
