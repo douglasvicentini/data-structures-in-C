@@ -6,7 +6,7 @@ In this implementation, the recursive functions use Pre-order traversal mode to 
 
 For example, the following tree 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/270px-Binary_search_tree.svg.png" alt="bst tree example" style="float: left; margin-right: 10px;"/> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/270px-Binary_search_tree.svg.png" alt="bst tree example" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/> 
 
 will be traversed and printed in the following way: 8-3-1-6-4-7-10-14-13.
 
