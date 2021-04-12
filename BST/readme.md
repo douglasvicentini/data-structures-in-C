@@ -4,12 +4,6 @@ A Binary Search Tree is a type of Binary Tree in which each node located in the 
 
 In this implementation, the recursive functions use Pre-order traversal mode to traverse the tree.
 
-For example, the following tree
-
-										5
-								3				10
-							2		4   	7	   	 11
-							  		  		  
-will be traversed and printed the following way: 5-3-2-4-10-7-11.
+For example, the following tree <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/270px-Binary_search_tree.svg.png" alt="bst tree example" style="float: left; margin-right: 10px;" /> will be traversed and printed in the following way: 8-3-1-6-4-7-10-14-13.
 
 
